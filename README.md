@@ -1,1 +1,1 @@
-![plot](./images/Screenshot.png)
+![plot](./images/calculator.png)
