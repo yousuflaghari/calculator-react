@@ -15,8 +15,8 @@ const Calculater = () => {
     // if result value is showing
     // clear
     setinput(input + value);
- 
-    if (result){
+
+    if (result) {
       setinput(value);
       setresult(false);
     }
@@ -31,10 +31,9 @@ const Calculater = () => {
       result = parseInt(str[0]) - parseInt(str[1]);
     } else {
     }
-    setinput(result)jkfdjk
+    setinput(result)
     setresult(true);
   }
-
 
   const clearinput = () => {
     setinput('')
@@ -45,32 +44,33 @@ const Calculater = () => {
 
   }
 
-
-
-
   return (
     <div>
       <h1>Calculator</h1>
       <input className='input' value={input} onChange={handlechange} />
       <div className='container'>
-        <button className='btn' onClick={() => handleinput("1")} >1</button>
-        <button className='btn' onClick={() => handleinput("2")} >2</button>
-        <button className='btn' onClick={() => handleinput("3")} >3</button>
-        <button className='btn' onClick={() => myeval('str')} >=</button>
+        <button className='btn' onClick={() => handleinput("7")} >7</button>
+        <button className='btn' onClick={() => handleinput("8")} >8</button>
+        <button className='btn' onClick={() => handleinput("9")} >9</button>
+        <button className='btn' onClick={() => handleoperater("%")} >%</button>
+
 
         <button className='btn' onClick={() => handleinput("4")} >4</button>
         <button className='btn' onClick={() => handleinput("5")} >5</button>
         <button className='btn' onClick={() => handleinput("6")} >6</button>
-        <button className='btn' onClick={() => clearinput()} >C</button>
+        <button className='btn' onClick={() => handleoperater("-")} >-</button>
 
-        <button className='btn' onClick={() => handleinput("7")} >7</button>
-        <button className='btn' onClick={() => handleinput("8")} >8</button>
-        <button className='btn' onClick={() => handleinput("9")} >9</button>
+
+        <button className='btn' onClick={() => handleinput("1")} >1</button>
+        <button className='btn' onClick={() => handleinput("2")} >2</button>
+        <button className='btn' onClick={() => handleinput("3")} >3</button>
         <button className='btn' onClick={() => handleoperater("+")} >+</button>
 
-        <button className='btn' onClick={() => handleoperater("-")} >-</button>
-        <button className='btn' onClick={() => handleoperater("%")} >%</button>
+
+        <button className='btn' onClick={() => clearinput()} >C</button>
+        <button className='btn' onClick={() => handleinput("0")} >0</button>
         <button className='btn' onClick={() => handleoperater("*")} >*</button>
+        <button className='btn' onClick={() => myeval('str')} >=</button>
 
       </div>
     </div>
