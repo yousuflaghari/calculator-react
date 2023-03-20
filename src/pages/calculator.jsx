@@ -31,7 +31,7 @@ const Calculater = () => {
       result = parseInt(str[0]) - parseInt(str[1]);
     } else {
     }
-    setinput(result)
+    setinput(result)jkfdjk
     setresult(true);
   }
 
