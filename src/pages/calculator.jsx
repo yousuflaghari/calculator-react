@@ -35,6 +35,7 @@ const Calculater = () => {
     setresult(true);
   }
 
+
   const clearinput = () => {
     setinput('')
   }
